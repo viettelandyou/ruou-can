@@ -2,8 +2,8 @@
 const nextConfig = {
   //output: "export",
   // distDir:'dist',
-  // assetPrefix: '/tranh-theu/',  // Đường dẫn chính xác tới tài nguyên tĩnh
-  // basePath: '/tranh-theu',
+  // assetPrefix: '/ruou-can/',  // Đường dẫn chính xác tới tài nguyên tĩnh
+  // basePath: '/ruou-can',
   images: {
     remotePatterns: [
       {

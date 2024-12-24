@@ -25,6 +25,9 @@ const config: Config = withMT({
             transform: "translate(calc(-50% - 0.5rem))",
           },
         },
+      }, 
+      clipPath: {
+        'torn': 'polygon(0% 0%, 100% 0%, 100% 90%, 80% 85%, 70% 100%, 50% 85%, 30% 100%, 15% 85%, 0% 100%)',
       },
     },
   },

@@ -18,9 +18,9 @@ export default function Portfolio() {
       <Hero />
       {/* <SponsoredBy /> */}
       <Example1/>
-      <AboutEvent />
-      <OurStats />
-      <EventContent />
+      {/* <AboutEvent /> */}
+      {/* <OurStats /> */}
+      {/* <EventContent /> */}
       <Faq />
       {/* <Footer /> */}
     </>
