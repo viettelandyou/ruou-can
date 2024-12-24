@@ -2,6 +2,7 @@
 
 import React from "react";
 import { Typography, Accordion, AccordionHeader, AccordionBody } from "@material-tailwind/react";
+import "../../public/style/styles.css"
 
 const FAQS = [
   {
@@ -29,27 +30,33 @@ const FAQS = [
 export function Faq() {
   const [open, setOpen] = React.useState(0);
   const handleOpen = (value: number) => setOpen(open === value ? 0 : value);
+  const text = "Hiện Đại";
 
   return (
-    <section className="py-8 px-8 lg:py-20">
+    <section className="py-8 px-8 lg:py-20 bg-[url('https://i.imgur.com/50Z9OsI.png')]">
       <div className="container mx-auto">
         <div className="text-center">
-          <Typography  variant="h1" color="blue-gray" className="mb-4">
-          Ý nghĩa
-          của rượu cần
+          <Typography variant="h3" color="blue-gray" className="mb-4">
+            <span className="text-red-500">Tinh Hoa <br /></span>
+            <span className="text-xs transform translate-y-[-50px]" style={{ marginTop: "-10px" }}>chạm tới </span>
+            <span id="textHienDai">
+            {text.split('').map((char, index) => (
+              <span id = "textHienDai"
+                key={`${char}-${index}`}
+                style={{ animationDelay: `${index * 0.05}s` }}
+              >
+                {char === " " ? "\u00A0" : char}
+              </span>
+            ))}
+            </span>
           </Typography>
-          <Typography 
+          <Typography
             variant="lead"
             className="mx-auto mb-24 lg:w-3/5 !text-gray-500"
           >
-          Với nhiều dân tộc, rượu cần còn mang ý nghĩa tâm linh sâu sắc. Đây là thức uống được dâng lên trong các
-nghi lễ để cầu bình an, mùa màng bội thu, hay mối quan hệ hòa thuận giữa con người với thiên nhiên.
-Trong đời sống thường ngày, rượu cần cũng là cách để thể hiện lòng mến khách và tạo sự kết nối giữa
-các thế hệ.
-Ngày nay, rượu cần không chỉ phổ biến trong cộng đồng dân tộc thiểu số mà còn trở thành một đặc sản
-nổi tiếng của Việt Nam. Rượu cần không chỉ là một thức uống mà còn là biểu tượng văn hóa, kết nối giữa
-con người, thiên nhiên và tín ngưỡng. Sự trường tồn của rượu cần chính là minh chứng cho sức sống
-mãnh liệt và giá trị bền vững của di sản văn hóa Việt Nam
+            Dù đã trải qua bao thăng trầm của lịch sử, rượu cần vẫn giữ được vị trí đặc biệt trong trái tim người Việt Nam. Hôm nay, những chum rượu cần không chỉ hiện diện trong các bản làng Tây Nguyên, mà còn được nâng niu tại các sự kiện giao lưu văn hóa, như một lời chào nồng hậu gửi đến bạn bè quốc tế. <br />
+
+            <span className="text-red-500">Tại Viettel&You 2025</span>, hoạt động thưởng thức rượu cần không chỉ đơn thuần là tái hiện một nét đẹp văn hóa, mà còn là lời khẳng định về sứ mệnh cùng nhau bảo tồn và lan tỏa giá trị di sản. Qua đó, Viettel cùng các nhà báo chia sẻ trách nhiệm gìn giữ và phát huy những giá trị truyền thống, để những di sản quý báu này tiếp tục là niềm tự hào và nguồn cảm hứng cho các thế hệ tương lai.
           </Typography>
         </div>
 
