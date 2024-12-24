@@ -14,8 +14,10 @@ const config: Config = withMT({
   theme: {
     extend: {
       fontFamily: {
-        magistral: ['Magistral', 'sans-serif'],
-      }, animation: {
+        magistral: ["Magistral", "sans-serif"],
+        mycustomfont: ["FTVAutography", "sans-serif"],
+      },
+      animation: {
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
@@ -25,9 +27,9 @@ const config: Config = withMT({
             transform: "translate(calc(-50% - 0.5rem))",
           },
         },
-      }, 
+      },
       clipPath: {
-        'torn': 'polygon(0% 0%, 100% 0%, 100% 90%, 80% 85%, 70% 100%, 50% 85%, 30% 100%, 15% 85%, 0% 100%)',
+        torn: "polygon(0% 0%, 100% 0%, 100% 90%, 80% 85%, 70% 100%, 50% 85%, 30% 100%, 15% 85%, 0% 100%)",
       },
     },
   },
@@ -38,7 +40,7 @@ function addVariablesForColors({ addBase, theme }: any) {
   let newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
   );
- 
+
   addBase({
     ":root": newVars,
   });

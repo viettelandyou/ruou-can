@@ -4,89 +4,81 @@
 
 @font-face {
     font-family: 'Magistral';
-    src: url('/fonts/FSMagistral-Bold.ttf') format('truetype');
+    src: url('/public/fonts/FSMagistral-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
   }
   
   @font-face {
     font-family: 'Magistral';
-    src: url('/fonts/FSMagistral-BoldItalic.ttf') format('truetype');
+    src: url('/public/fonts/FSMagistral-BoldItalic.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
   }
   
   @font-face {
     font-family: 'Magistral';
-    src: url('/fonts/FSMagistral-Book.ttf') format('truetype');
+    src: url('/public/fonts/FSMagistral-Book.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
   
   @font-face {
     font-family: 'Magistral';
-    src: url('/fonts/FSMagistral-BookItalic.ttf') format('truetype');
+    src: url('/public/fonts/FSMagistral-BookItalic.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
   }
   
   @font-face {
     font-family: 'Magistral';
-    src: url('/fonts/FSMagistral-ExtraBold.ttf') format('truetype');
+    src: url('/public/fonts/FSMagistral-ExtraBold.ttf') format('truetype');
     font-weight: 800; /* ExtraBold weight */
     font-style: normal;
   }
   
   @font-face {
     font-family: 'Magistral';
-    src: url('/fonts/FSMagistral-ExtraBoldItalic.ttf') format('truetype');
+    src: url('/public/fonts/FSMagistral-ExtraBoldItalic.ttf') format('truetype');
     font-weight: 800; /* ExtraBold weight */
     font-style: italic;
   }
   
   @font-face {
     font-family: 'Magistral';
-    src: url('/fonts/FSMagistral-Light.ttf') format('truetype');
+    src: url('/public/fonts/FSMagistral-Light.ttf') format('truetype');
     font-weight: 300; /* Light weight */
     font-style: normal;
   }
   
   @font-face {
     font-family: 'Magistral';
-    src: url('/fonts/FSMagistral-LightItalic.ttf') format('truetype');
+    src: url('/public/fonts/FSMagistral-LightItalic.ttf') format('truetype');
     font-weight: 300; /* Light weight */
     font-style: italic;
   }
   
   @font-face {
     font-family: 'Magistral';
-    src: url('/fonts/FSMagistral-Medium.ttf') format('truetype');
+    src: url('/public/fonts/FSMagistral-Medium.ttf') format('truetype');
     font-weight: 500; /* Medium weight */
     font-style: normal;
   }
   
   @font-face {
     font-family: 'Magistral';
-    src: url('/fonts/FSMagistral-MediumItalic.ttf') format('truetype');
+    src: url('/public/fonts/FSMagistral-MediumItalic.ttf') format('truetype');
     font-weight: 500; /* Medium weight */
     font-style: italic;
   }
   
   @font-face {
-    font-family: 'MyCustomFont';
-    src: url('/fonts/fonts/1FTV-Autography.otf') format('opentype');
+    font-family: 'FTVAutography';
+    src: url('/public/fonts/fonts/1FTV-Autography.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
   }
   
-  body {
-    font-family: 'Magistral', sans-serif;
-  }
-  
-  /* Áp dụng font MyCustomFont cho phần tử cụ thể */
-  .custom-font {
-    font-family: 'MyCustomFont', sans-serif;
-  }
   .torn-effect {
     clip-path: polygon(
       0% 0%, 
