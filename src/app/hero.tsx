@@ -92,7 +92,7 @@ const imgRefs = useRef<(HTMLImageElement | null)[]>([]);
                 DI SẢN NÚI RỪNG
               </h4>
               <p className="mt-2 text-sm text-gray-500 sm:text-base font-magistral">
-              Sự kiện Viettel&You 2025 với chủ đề "The Heritage Soul - Hồn di sản" không chỉ là hành trình lắng đọng để khám phá di sản văn hóa Việt Nam mà còn là dịp để Viettel và các nhà báo cùng cảm nhận sâu sắc tinh hoa truyền thống thông qua những trải nghiệm độc đáo. Một trong những điểm nhấn đặc biệt tại sự kiện là không gian thưởng thức rượu cần – một di sản mang đậm bản sắc của các dân tộc thiểu số ở Tây Nguyên
+              Sự kiện Viettel&You 2025 với chủ đề &quotThe Heritage Soul - Hồn di sản&quot không chỉ là hành trình lắng đọng để khám phá di sản văn hóa Việt Nam mà còn là dịp để Viettel và các nhà báo cùng cảm nhận sâu sắc tinh hoa truyền thống thông qua những trải nghiệm độc đáo. Một trong những điểm nhấn đặc biệt tại sự kiện là không gian thưởng thức rượu cần – một di sản mang đậm bản sắc của các dân tộc thiểu số ở Tây Nguyên
               và miền núi phía Bắc.
               </p>
             </div>
