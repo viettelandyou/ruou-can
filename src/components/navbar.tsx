@@ -6,14 +6,7 @@ import {
   IconButton,
   Typography,
 } from "@material-tailwind/react";
-import {
-  RectangleStackIcon,
-  UserCircleIcon,
-  CommandLineIcon,
-  Squares2X2Icon,
-  XMarkIcon,
-  Bars3Icon,
-} from "@heroicons/react/24/solid";
+import { RectangleStackIcon } from "@heroicons/react/24/solid";
 
 interface NavItemProps {
   children: React.ReactNode;
@@ -24,7 +17,6 @@ function NavItem({ children, href }: NavItemProps) {
   return (
     <li>
       <Typography
-        
         as="a"
         href={href || "#"}
         target={href ? "_blank" : "_self"}
@@ -82,7 +74,6 @@ export function Navbar() {
 
   return (
     <MTNavbar
-    
       shadow={false}
       fullWidth
       blurred={false}
@@ -90,14 +81,13 @@ export function Navbar() {
       className="fixed top-0 z-50 border-0 w-full"
     >
       <div className="container mx-auto flex items-center justify-between">
-      <div className="flex-1 text-center">
-        <Typography
-         
-          color={isScrolling ? "blue-gray" : "red"}
-          className="text-lg font-bold font-magistral"
-        >
-          VIETTEL & YOU
-        </Typography>
+        <div className="flex-1 text-center">
+          <Typography
+            color={isScrolling ? "blue-gray" : "red"}
+            className="text-lg font-bold font-magistral"
+          >
+            VIETTEL & YOU
+          </Typography>
         </div>
         {/* <ul
           className={`ml-10 hidden items-center gap-6 lg:flex ${

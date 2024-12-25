@@ -1,11 +1,10 @@
 import type { Config } from "tailwindcss";
 
 const withMT = require("@material-tailwind/react/utils/withMT");
-const defaultTheme = require("tailwindcss/defaultTheme");
 const {
   default: flattenColorPalette,
 } = require("tailwindcss/lib/util/flattenColorPalette");
-const colors = require("tailwindcss/colors");
+
 const config: Config = withMT({
   content: [
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -15,12 +14,11 @@ const config: Config = withMT({
     extend: {
       fontFamily: {
         magistral: ["Magistral", "sans-serif"],
-        mycustomfont: ["FTVAutography", "sans-serif"],
       },
       animation: {
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
-        'text': 'text 5s ease infinite',
+        text: "text 5s ease infinite",
         "text-reveal": "text-reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s",
       },
       keyframes: {
@@ -29,15 +27,15 @@ const config: Config = withMT({
             transform: "translate(calc(-50% - 0.5rem))",
           },
         },
-        'text': {
-          '0%, 100%': {
-            'background-size': '200% 200%',
-            'background-position': 'left center'
+        text: {
+          "0%, 100%": {
+            "background-size": "200% 200%",
+            "background-position": "left center",
           },
-          '50%': {
-            'background-size': '200% 200%',
-            'background-position': 'right center'
-          }
+          "50%": {
+            "background-size": "200% 200%",
+            "background-position": "right center",
+          },
         },
         "text-reveal": {
           "0%": {
@@ -47,13 +45,11 @@ const config: Config = withMT({
             transform: "translate(0, 0)",
           },
         },
-
       },
       clipPath: {
         torn: "polygon(0% 0%, 100% 0%, 100% 90%, 80% 85%, 70% 100%, 50% 85%, 30% 100%, 15% 85%, 0% 100%)",
       },
     },
-
   },
   plugins: [addVariablesForColors],
 });

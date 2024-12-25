@@ -31,15 +31,9 @@ const Example1: React.FC = () => {
   }, []);
 
   return (
-    <div className="bg-black">
+    <div className="mt-0 bg-[url('https://i.imgur.com/nHKp7a3.jpeg')]">
       <div className="mx-auto max-w-5xl pl-0 pr-0 py-24">
-        <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            HỒN DI SẢN
-          </h2>
-        </div>
-
-        <div className="mt-16 space-y-16">
+        <div className="space-y-16">
           <div className="flex flex-col-reverse items-center gap-y-8 md:flex-row md:gap-x-4">
             <div className="flex-1 min-w-0 md:pl-0">
               <h3 className="text-lg font-medium text-gray-900 sm:text-xl font-mycustomfont">
