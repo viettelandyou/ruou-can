@@ -34,7 +34,7 @@ const imgRefs = useRef<(HTMLImageElement | null)[]>([]);
 
   return (
     <div>
-    <div className="static min-h-screen bg-cover bg-[url('https://i.imgur.com/nHKp7a3.jpeg')] bg-no-repeat bg-center">
+    <div className="static min-h-screen bg-cover bg-[url('https://i.imgur.com/nHKp7a3.jpeg')] bg-no-repeat bg-center z-30">
       <div className="static inset-0 h-full w-full" />
       <div className="grid min-h-screen">
         <div className="container static z-10 my-auto mt-10 grid place-items-center text-center">
@@ -91,19 +91,27 @@ const imgRefs = useRef<(HTMLImageElement | null)[]>([]);
               <h4 className="text-medium font-medium text-gray-900 font-magistral border-white-900 text-center font-magistral">
                 DI SẢN NÚI RỪNG
               </h4>
-              <p className="mt-2 text-sm text-gray-500 sm:text-base font-magistral">
+              <p className="mt-2 text-sm text-gray-500 sm:text-base font-magistral z-10">
               Sự kiện Viettel&You 2025 với chủ đề &quotThe Heritage Soul - Hồn di sản&quot không chỉ là hành trình lắng đọng để khám phá di sản văn hóa Việt Nam mà còn là dịp để Viettel và các nhà báo cùng cảm nhận sâu sắc tinh hoa truyền thống thông qua những trải nghiệm độc đáo. Một trong những điểm nhấn đặc biệt tại sự kiện là không gian thưởng thức rượu cần – một di sản mang đậm bản sắc của các dân tộc thiểu số ở Tây Nguyên
               và miền núi phía Bắc.
               </p>
             </div>
-            <div className="flex-1 min-w-0 md:pl-0">
+            {/* <div className="flex-1 min-w-0 md:pl-0">
               <img
                 alt="Rượu cần"
                 src="https://i.imgur.com/atqbBwj.png"
-                className="w-full rounded-lg object-cover md:ml-0 fade-in"
+                className="w-full rounded-lg object-cover md:ml-0 fade-in z-10"
                 ref={(el) => (imgRefs.current[0] = el)}
               />
-            </div>
+            </div> */}
+            <div className="relative flex-1 min-w-0 md:pl-0">
+  <img
+    alt="Rượu cần"
+    src="https://i.imgur.com/Ca6Ly7k.png"
+    className="w-full rounded-lg object-cover md:ml-0 fade-in"
+    ref={(el) => (imgRefs.current[0] = el)}
+  />
+</div>
           </div>
 
           <div className="flex flex-col-reverse items-center gap-y-8 md:flex-row-reverse md:gap-x-4">

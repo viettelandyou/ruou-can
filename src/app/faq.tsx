@@ -70,6 +70,8 @@ export function Faq() {
         </div>
       </div>
     </section>
+
+    
   );
 }
 
