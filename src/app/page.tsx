@@ -16,7 +16,7 @@ export default function Portfolio() {
     <>
       <Navbar />
       <Hero />
-      <Example1 />
+      {/* <Example1 /> */}
       <Faq />
     </>
   );

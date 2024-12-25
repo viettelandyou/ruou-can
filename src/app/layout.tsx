@@ -10,9 +10,9 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Trải nghiệm tranh thuê Văn Lâm",
+  title: "Khu trải nghiệm rượu cần",
   description:
-    "Introducing Tailwind Event Landing Page, a dynamic and visually appealing landing page template designed using Tailwind CSS and Material Tailwind.",
+    ""
 };
 
 export default function RootLayout({

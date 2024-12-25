@@ -13,7 +13,7 @@ export function Faq() {
       <div
         className="absolute inset-0 z-0 bg-no-repeat bg-cover"
         style={{
-          backgroundImage: "url('https://i.imgur.com/50Z9OsI.png')",
+          backgroundImage: "url('https://i.imgur.com/6M3Lgg2.png')",
         }}
       ></div>
 
@@ -36,7 +36,7 @@ export function Faq() {
               className="text-xs transform translate-y-[-50px]"
               style={{ marginTop: "-10px" }}
             >
-              <span className="font-magistral">chạm tới</span>
+              <span className="font-magistral">chạm đến</span>
             </span>
             <span id="textHienDai" className="font-magistral">
               {text.split("").map((char, index) => (
@@ -52,7 +52,7 @@ export function Faq() {
           </Typography>
           <Typography
             variant="lead"
-            className="mx-auto mb-24 lg:w-3/5 !text-gray-500 font-magistral"
+            className="mx-auto mb-24 lg:w-3/5 text-black font-magistral"
           >
             Dù đã trải qua bao thăng trầm của lịch sử, rượu cần vẫn giữ được vị
             trí đặc biệt trong trái tim người Việt Nam. Hôm nay, những chum rượu
