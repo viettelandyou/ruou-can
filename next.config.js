@@ -3,8 +3,8 @@
 const nextConfig = {
   //output: "export",
   // distDir:'dist',
-  basePath: '/viettelandyou',
-  assetPrefix: '/viettelandyou' ,
+  basePath: '/ruou-can',
+  assetPrefix: '/ruou-can' ,
   images: {
     remotePatterns: [
       {
