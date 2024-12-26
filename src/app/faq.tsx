@@ -9,14 +9,6 @@ export function Faq() {
 
   return (
     <section className="py-8 px-8 lg:py-20 relative">
-      {/* Ảnh nền */}
-      <div
-        className="absolute inset-0 z-0 bg-no-repeat bg-cover"
-        style={{
-          // backgroundImage: "url('https://i.imgur.com/PTIrB29.jpeg')",
-          backgroundImage: "url('https://i.imgur.com/nHKp7a3.jpeg') ",
-        }}
-      ></div>
       {/* Nội dung */}
       <div className="container mx-auto relative z-20 md:max-w-[70%]">
         <div className="text-center">
