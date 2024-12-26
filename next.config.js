@@ -3,8 +3,8 @@
 const nextConfig = {
   //output: "export",
   // distDir:'dist',
-  basePath: '/ruou-can',
-  assetPrefix: '/ruou-can' ,
+  // basePath: '/ruou-can',
+  // assetPrefix: '/ruou-can' ,
   images: {
     remotePatterns: [
       {
