@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
   //output: "export",
   // distDir:'dist',
-  assetPrefix: "/ruou-can/", // Đường dẫn chính xác tới tài nguyên tĩnh
-  basePath: "/ruou-can",
+  basePath: isProd ? '/viettelandyou' : '',
+  assetPrefix: isProd ? '/viettelandyou' : '',
   images: {
     remotePatterns: [
       {
