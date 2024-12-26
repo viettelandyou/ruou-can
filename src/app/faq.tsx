@@ -13,20 +13,12 @@ export function Faq() {
       <div
         className="absolute inset-0 z-0 bg-no-repeat bg-cover"
         style={{
-          backgroundImage: "url('https://i.imgur.com/6M3Lgg2.png')",
+          // backgroundImage: "url('https://i.imgur.com/PTIrB29.jpeg')",
+          backgroundImage: "url('https://i.imgur.com/nHKp7a3.jpeg') ",
         }}
       ></div>
-
-      {/* Ảnh đè lên với hiệu ứng mờ */}
-      <div
-        className="absolute inset-0 z-10 bg-no-repeat bg-cover opacity-40 filter blur-md"
-        style={{
-          backgroundImage: "url('https://i.imgur.com/nHKp7a3.jpeg')",
-        }}
-      ></div>
-
       {/* Nội dung */}
-      <div className="container mx-auto relative z-20">
+      <div className="container mx-auto relative z-20 md:max-w-[70%]">
         <div className="text-center">
           <Typography variant="h3" color="blue-gray" className="mb-4">
             <span className="text-red-500 font-magistral text-5xl">
@@ -71,7 +63,7 @@ export function Faq() {
       </div>
     </section>
 
-    
+
   );
 }
 

@@ -29,22 +29,6 @@ function NavItem({ children, href }: NavItemProps) {
   );
 }
 
-const NAV_MENU = [
-  {
-    name: "NVT Production House",
-    icon: RectangleStackIcon,
-  },
-  // {
-  //   name: "Account",
-  //   icon: UserCircleIcon,
-  // },
-  // {
-  //   name: "Docs",
-  //   icon: CommandLineIcon,
-  //   href: "https://www.material-tailwind.com/docs/react/installation",
-  // },
-];
-
 export function Navbar() {
   const [open, setOpen] = React.useState(false);
   const [isScrolling, setIsScrolling] = React.useState(false);
@@ -80,7 +64,7 @@ export function Navbar() {
       color={isScrolling ? "white" : "transparent"}
       className="fixed top-0 z-50 border-0 w-full"
     >
-      <div className="container mx-auto flex items-center justify-between">
+      <div className="container mx-auto flex items-center justify-between mx-auto max-w-[70%]">
         <div className="flex-1 text-center">
           <Typography
             color={isScrolling ? "blue-gray" : "red"}
